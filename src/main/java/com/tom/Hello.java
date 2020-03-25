@@ -7,13 +7,17 @@ public class Hello {
         //System.out.println("Hello");
      Person p=new Person();
      p.hello();
-     int age=19;
-     char c='我';
+     p.weight=66.5f;
+     p.height=1.7f;
+     System.out.println(p.bmi());
+     /*int age=19;
+     char c='x';
+     Character c2='A';
      byte b=120;
      float weight =66.5f;
      double heighrt=1.7;
      boolean adult=true;
-     String name="tom";
+     String name="tom";*/
 
     }
 }
