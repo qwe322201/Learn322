@@ -1,4 +1,4 @@
-package com.tom.student
+package com.tom.tom.student
 
 import java.util.*
 
@@ -10,12 +10,12 @@ fun main() {
     var english=scanner.nextInt()
     print("Please ceter math")
     var math=scanner.nextInt()
-    val stu=Student(name,english,math)
+    val stu= Student(name, english, math)
     stu.print()
 }
 
 class Student (var name:String,var english:Int,var math:Int){
-    fun print(){
+   fun print(){
         println(name+"\t"+english+"\t"+math+"\t"+(english+math)/2)
     }
 }

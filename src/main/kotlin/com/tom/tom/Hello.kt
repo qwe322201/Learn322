@@ -1,8 +1,8 @@
-package com.tom
+package com.tom.tom
 
 fun main() {
     //println("Hello")
-    val h = Human(weight = 66.5f,height = 1.7f)
+    val h = Human(weight = 66.5f, height = 1.7f)
     println(h.bmi())
     val score=88
     println(score>60)
