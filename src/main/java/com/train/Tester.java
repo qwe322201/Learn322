@@ -4,13 +4,19 @@ import java.util.Scanner;
 
 public class Tester {
     public static void main(String[] args) {
-        System.out.println("Please enter number of tickets:");
-        Scanner scanner=new Scanner(System.in);
-        int ticket=scanner.nextInt();
-        System.out.println("How many round-trip tickets:");
-        int round=scanner.nextInt();
-        Ticket tst=new Ticket(ticket,round);
-        tst.print();
+        Scanner scanner = new Scanner(System.in);
+        int ticket = 0;
+        int round = 0;
+        while (true) {
+            System.out.println("Please enter number of tickets:");
+            ticket = scanner.nextInt();
+            if (ticket == -1) break;
+            System.out.println("How many round-trip tickets:");
+            round = scanner.nextInt();
+            if (round == -1) break;
+            ;
+            Ticket tst = new Ticket(ticket, round);
+            tst.print();
+        }
     }
-
 }
